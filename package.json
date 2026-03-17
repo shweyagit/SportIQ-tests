@@ -1,0 +1,25 @@
+{
+  "name": "sportiq-tests",
+  "version": "1.0.0",
+  "description": "Playwright E2E tests for SportIQ with TestRail and Jira integration",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report",
+    "cucumber": "cucumber-js",
+    "cucumber:ci": "cucumber-js --profile ci",
+    "cucumber:security": "cucumber-js --profile security",
+    "cucumber:ai": "cucumber-js --profile ai-quality"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.58.2",
+    "axios": "^1.13.6",
+    "dotenv": "^17.3.1"
+  },
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^0.78.0",
+    "@cucumber/cucumber": "^12.7.0",
+    "chai": "^6.2.2",
+    "pactum": "^3.9.1"
+  }
+}

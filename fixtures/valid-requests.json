@@ -1,0 +1,30 @@
+{
+  "football": {
+    "question": "Who is the best striker in the Premier League?",
+    "sport": "football"
+  },
+  "football-factual": {
+    "question": "Who has won the most Ballon d'Or awards?",
+    "sport": "football"
+  },
+  "football-tactical": {
+    "question": "Is Messi better than Ronaldo?",
+    "sport": "football"
+  },
+  "cricket": {
+    "question": "Who is the best Test batsman of 2024?",
+    "sport": "cricket"
+  },
+  "cricket-factual": {
+    "question": "Who has scored the most Test centuries in cricket history?",
+    "sport": "cricket"
+  },
+  "tennis": {
+    "question": "Who has the best serve in mens tennis?",
+    "sport": "tennis"
+  },
+  "tennis-factual": {
+    "question": "Who has won the most Grand Slam titles in mens tennis?",
+    "sport": "tennis"
+  }
+}

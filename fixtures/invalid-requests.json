@@ -1,0 +1,29 @@
+{
+  "missing-question": {
+    "sport": "football"
+  },
+  "missing-sport": {
+    "question": "Who is the best striker in the Premier League?"
+  },
+  "empty-question": {
+    "question": "",
+    "sport": "football"
+  },
+  "whitespace-question": {
+    "question": "   ",
+    "sport": "football"
+  },
+  "empty-sport": {
+    "question": "Who is the best striker in the Premier League?",
+    "sport": ""
+  },
+  "invalid-sport-basketball": {
+    "question": "Who is the best player?",
+    "sport": "basketball"
+  },
+  "invalid-sport-rugby": {
+    "question": "Who is the best player?",
+    "sport": "rugby"
+  },
+  "empty-body": {}
+}
