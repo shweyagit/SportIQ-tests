@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Environment
+.env
+
+# Behave reports
+reports/
+*.json.report
+
+# IDE
+.idea/
+.vscode/
+
+# Node (legacy — kept in case node_modules dir still present locally)
+node_modules/
+package-lock.json
+
+# Playwright CLI session logs
+.playwright-cli/
+
+# macOS
+.DS_Store

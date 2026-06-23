@@ -1,0 +1,25 @@
+# HTTP client — streaming SSE support
+httpx>=0.27.0
+
+# Test framework
+pytest>=8.0.0
+
+# AI evaluation — per-test-case metrics, LLM-as-judge
+deepeval>=4.0.0
+
+# RAG evaluation — dataset-level pipeline benchmarking
+ragas==0.1.21
+datasets>=4.0.0
+
+# LLM providers
+anthropic>=0.40.0
+
+# LangChain wrappers — required by RAGAS to use Claude as the judge LLM
+langchain-anthropic>=0.1.0
+langchain-core>=0.2.0
+
+# Local embeddings — used by RAGAS answer_relevancy metric (no extra API key needed)
+sentence-transformers>=5.0.0
+
+# Env config
+python-dotenv>=1.0.0
