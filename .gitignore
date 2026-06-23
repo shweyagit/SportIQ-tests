@@ -29,3 +29,6 @@ package-lock.json
 
 # macOS
 .DS_Store
+
+# Claude skills (local only — in progress, not ready for remote)
+.claude/skills/
