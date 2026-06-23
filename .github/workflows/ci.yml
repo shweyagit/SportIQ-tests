@@ -44,7 +44,15 @@ jobs:
             -o /dev/null -w "HTTP %{http_code}" || true
 
       - name: Run contract tests
-        run: pytest tests/api/test_contract.py -v --tb=short
+        run: pytest tests/api/test_contract.py -v --tb=short --junit-xml=test-results/results.xml
+                                          
+      - name: Upload test results
+        if: always()                                                                                                                                                 
+        uses: actions/upload-artifact@v4
+        with:                                                                                                                                                        
+            name: test-results                                                                                                                                       
+            path: test-results/
+            retention-days: 7
 
   # ── Job 2: Security tests — runs on every PR ────────────────────────────────
   security:
