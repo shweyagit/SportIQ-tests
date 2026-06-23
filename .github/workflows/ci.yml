@@ -102,16 +102,16 @@ jobs:
       - name: Run hallucination tests
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: pytest tests/eval/test_hallucination.py -v --tb=short
+        run: pytest tests/eval/test_hallucination.py -v --tb=short --junit-xml=test-results/results.xml
 
       - name: Run AI quality tests
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: pytest tests/eval/test_ai_quality.py -v --tb=short
+        run: pytest tests/eval/test_ai_quality.py -v --tb=short --junit-xml=test-results/results.xml
         continue-on-error: true
 
       - name: Run RAG eval tests
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: pytest tests/eval/test_rag_deepeval.py tests/eval/test_rag_ragas.py -v --tb=short
+        run: pytest tests/eval/test_rag_deepeval.py tests/eval/test_rag_ragas.py -v --tb=short --junit-xml=test-results/results.xml
         continue-on-error: true
