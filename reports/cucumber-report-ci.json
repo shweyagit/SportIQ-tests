@@ -1,0 +1,480 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "dual-analyst-—-api-functional;valid-football-question-returns-both-analyst-perspectives",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Valid football question returns both analyst perspectives",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 40916
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the SportIQ API is running",
+            "match": {
+              "location": "step-definitions/shared/api-steps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 560599041
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the analyst temperature is configured",
+            "match": {
+              "location": "step-definitions/shared/api-steps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 120499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I send a valid football question",
+            "match": {
+              "location": "step-definitions/shared/api-steps.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2275374
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I send the request",
+            "match": {
+              "location": "step-definitions/shared/request-logger.js:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5788050708
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I attach the request and response",
+            "match": {
+              "location": "step-definitions/shared/request-logger.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 837332
+            },
+            "embeddings": [
+              {
+                "data": "ewogICJ1cmwiOiAiaHR0cHM6Ly9zcG9ydGlxLXZveHYub25yZW5kZXIuY29tL2FwaS9hbmFseXNlIiwKICAibWV0aG9kIjogIlBPU1QiLAogICJwYXRoIjogIi9hcGkvYW5hbHlzZSIsCiAgImJvZHkiOiB7CiAgICAicXVlc3Rpb24iOiAiV2hvIGlzIHRoZSBiZXN0IHN0cmlrZXIgaW4gdGhlIFByZW1pZXIgTGVhZ3VlPyIsCiAgICAic3BvcnQiOiAiZm9vdGJhbGwiCiAgfSwKICAidGltZW91dCI6IDMwMDAwCn0=",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "ewogICJkYXRlIjogIlRodSwgMTIgTWFyIDIwMjYgMTY6NDg6MzQgR01UIiwKICAiY29udGVudC10eXBlIjogImFwcGxpY2F0aW9uL2pzb247IGNoYXJzZXQ9dXRmLTgiLAogICJ0cmFuc2Zlci1lbmNvZGluZyI6ICJjaHVua2VkIiwKICAiY29ubmVjdGlvbiI6ICJrZWVwLWFsaXZlIiwKICAiY2YtcmF5IjogIjlkYjQ0OTY0NWEzYTYzZjQtTEhSIiwKICAiYWNjZXNzLWNvbnRyb2wtYWxsb3ctb3JpZ2luIjogIioiLAogICJldGFnIjogIlcvXCI1ZjAtY3lwMlJteFgyTVp6ZG1CSC9tUXdWRVd3b0VVXCIiLAogICJybmRyLWlkIjogImM5NGNlMGYxLTk2ZGEtNGQwZSIsCiAgInZhcnkiOiAiQWNjZXB0LUVuY29kaW5nIiwKICAieC1wb3dlcmVkLWJ5IjogIkV4cHJlc3MiLAogICJ4LXJlbmRlci1vcmlnaW4tc2VydmVyIjogIlJlbmRlciIsCiAgImNmLWNhY2hlLXN0YXR1cyI6ICJEWU5BTUlDIiwKICAic2VydmVyIjogImNsb3VkZmxhcmUiLAogICJhbHQtc3ZjIjogImgzPVwiOjQ0M1wiOyBtYT04NjQwMCIKfQ==",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "ewogICJxdWVzdGlvbiI6ICJXaG8gaXMgdGhlIGJlc3Qgc3RyaWtlciBpbiB0aGUgUHJlbWllciBMZWFndWU/IiwKICAic3BvcnQiOiAiZm9vdGJhbGwiLAogICJhbmFseXN0QSI6ICJFcmxpbmcgSGFhbGFuZCBpcyB1bnF1ZXN0aW9uYWJseSB0aGUgUHJlbWllciBMZWFndWUncyBwcmVtaWVyIHN0cmlrZXIgcmlnaHQgbm93IC0gaGlzIG1vdmVtZW50IGluIHRoZSBib3ggaXMgdGVsZXBhdGhpYyBhbmQgaGlzIGZpbmlzaGluZyBhY3Jvc3MgYWxsIHNpdHVhdGlvbnMgaXMgZ2VudWluZWx5IHdvcmxkLWNsYXNzLiBXaGF0IHNlcGFyYXRlcyBoaW0gZnJvbSB0aGUgcGFjayBpcyBob3cgaGUgY3JlYXRlcyBzcGFjZSB0aHJvdWdoIGludGVsbGlnZW50IHJ1bnMgYmVoaW5kIHRoZSBkZWZlbnNpdmUgbGluZSwgY29uc3RhbnRseSBwdWxsaW5nIGNlbnRlci1iYWNrcyBvdXQgb2YgcG9zaXRpb24gZXZlbiB3aGVuIGhlIGRvZXNuJ3QgZ2V0IHRoZSBiYWxsLiBIYXJyeSBLYW5lIHdhcyBicmlsbGlhbnQgYXQgVG90dGVuaGFtIHdpdGggaGlzIGRlZXBlciBwb3NpdGlvbmluZyBhbmQgcGxheW1ha2luZywgYnV0IEhhYWxhbmQncyBwdXJlIGdvYWwgdGhyZWF0IGFuZCB0aGUgd2F5IGhlIHN0cmV0Y2hlcyBkZWZlbnNlcyB2ZXJ0aWNhbGx5IG1ha2VzIENpdHkncyBhdHRhY2tpbmcgc3lzdGVtIHZpcnR1YWxseSB1bnN0b3BwYWJsZS4gVGhlIE5vcndlZ2lhbidzIGFiaWxpdHkgdG8gc2NvcmUgZnJvbSBoYWxmLWNoYW5jZXMgd2hpbGUgYWxzbyBiZWluZyBhIG5pZ2h0bWFyZSB0byBtYXJrIGluIHRyYW5zaXRpb24gcHV0cyBoaW0gaW4gYSB0aWVyIG9mIGhpcyBvd24uIiwKICAiYW5hbHlzdEIiOiAiQmFzZWQgb24gcHVyZSBnb2Fsc2NvcmluZyBtZXRyaWNzLCBFcmxpbmcgSGFhbGFuZCBkb21pbmF0ZXMgd2l0aCB0aGUgaGlnaGVzdCBnb2FscyBwZXIgOTAgbWludXRlcyAoMC45OCkgYW5kIHhHIGNvbnZlcnNpb24gcmF0ZSBhbW9uZyByZWd1bGFyIHN0YXJ0ZXJzLiBIb3dldmVyLCBIYXJyeSBLYW5lJ3Mgc3VwZXJpb3IgYWxsLWFyb3VuZCBjb250cmlidXRpb24gLSBsZWFkaW5nIGluIGFzc2lzdHMsIHByb2dyZXNzaXZlIHBhc3NlcywgYW5kIHNob3QtY3JlYXRpbmcgYWN0aW9ucyB3aGlsZSBtYWludGFpbmluZyBlbGl0ZSBmaW5pc2hpbmcgLSBtYWtlcyBhIGNvbXBlbGxpbmcgY2FzZSBmb3IgY29tcGxldGUgc3RyaWtlciBwbGF5LiBNb2hhbWVkIFNhbGFoJ3MgY29uc2lzdGVudCBvdmVycGVyZm9ybWFuY2Ugb2YgeEcgYWNyb3NzIG11bHRpcGxlIHNlYXNvbnMgKGNhcmVlciArMjkgZ29hbHMgYWJvdmUgZXhwZWN0ZWQpIGRlbW9uc3RyYXRlcyB0aGUgbW9zdCByZWxpYWJsZSBnb2FsIHRocmVhdCwgdGhvdWdoIGhpcyB3aWRlIHBvc2l0aW9uaW5nIGNvbXBsaWNhdGVzIHRoZSBcInN0cmlrZXJcIiBjbGFzc2lmaWNhdGlvbi4gVGhlIGRhdGEgc3VnZ2VzdHMgbm8gY2xlYXIgY29uc2Vuc3VzLCB3aXRoIGVhY2ggZXhjZWxsaW5nIGluIGRpZmZlcmVudCBhc3BlY3RzIG9mIHRoZSBtb2Rlcm4gc3RyaWtlciByb2xlLiIKfQ==",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "step-definitions/shared/api-steps.js:92"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 208792
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "both analysts should respond with content",
+            "match": {
+              "location": "step-definitions/dual-analyst/analyst-steps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1227375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the response should echo back the sport and question",
+            "match": {
+              "location": "step-definitions/dual-analyst/analyst-steps.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 113166
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@functional",
+            "line": 2
+          },
+          {
+            "name": "@functional",
+            "line": 10
+          },
+          {
+            "name": "@p1",
+            "line": 10
+          },
+          {
+            "name": "@football",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "dual-analyst-—-api-functional;valid-cricket-question-returns-both-analyst-perspectives",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Valid cricket question returns both analyst perspectives",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 62291
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the SportIQ API is running",
+            "match": {
+              "location": "step-definitions/shared/api-steps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 194589833
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the analyst temperature is configured",
+            "match": {
+              "location": "step-definitions/shared/api-steps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 139583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I send a valid cricket question",
+            "match": {
+              "location": "step-definitions/shared/api-steps.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 711709
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "I send the request",
+            "match": {
+              "location": "step-definitions/shared/request-logger.js:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6147771833
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I attach the request and response",
+            "match": {
+              "location": "step-definitions/shared/request-logger.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 197458
+            },
+            "embeddings": [
+              {
+                "data": "ewogICJ1cmwiOiAiaHR0cHM6Ly9zcG9ydGlxLXZveHYub25yZW5kZXIuY29tL2FwaS9hbmFseXNlIiwKICAibWV0aG9kIjogIlBPU1QiLAogICJwYXRoIjogIi9hcGkvYW5hbHlzZSIsCiAgImJvZHkiOiB7CiAgICAicXVlc3Rpb24iOiAiV2hvIGlzIHRoZSBiZXN0IFRlc3QgYmF0c21hbiBvZiAyMDI0PyIsCiAgICAic3BvcnQiOiAiY3JpY2tldCIKICB9LAogICJ0aW1lb3V0IjogMzAwMDAKfQ==",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "ewogICJkYXRlIjogIlRodSwgMTIgTWFyIDIwMjYgMTY6NDg6NDAgR01UIiwKICAiY29udGVudC10eXBlIjogImFwcGxpY2F0aW9uL2pzb247IGNoYXJzZXQ9dXRmLTgiLAogICJ0cmFuc2Zlci1lbmNvZGluZyI6ICJjaHVua2VkIiwKICAiY29ubmVjdGlvbiI6ICJrZWVwLWFsaXZlIiwKICAiY2YtcmF5IjogIjlkYjQ0OTg5Y2E5YjYzZjQtTEhSIiwKICAiYWNjZXNzLWNvbnRyb2wtYWxsb3ctb3JpZ2luIjogIioiLAogICJldGFnIjogIlcvXCI2MDQtS2crMlA2U0xQcU1QdS9ObHlZYytpWm1qYWVrXCIiLAogICJybmRyLWlkIjogImY0YWUyNjdjLWZmMGMtNGJkMyIsCiAgInZhcnkiOiAiQWNjZXB0LUVuY29kaW5nIiwKICAieC1wb3dlcmVkLWJ5IjogIkV4cHJlc3MiLAogICJ4LXJlbmRlci1vcmlnaW4tc2VydmVyIjogIlJlbmRlciIsCiAgImNmLWNhY2hlLXN0YXR1cyI6ICJEWU5BTUlDIiwKICAic2VydmVyIjogImNsb3VkZmxhcmUiLAogICJhbHQtc3ZjIjogImgzPVwiOjQ0M1wiOyBtYT04NjQwMCIKfQ==",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "ewogICJxdWVzdGlvbiI6ICJXaG8gaXMgdGhlIGJlc3QgVGVzdCBiYXRzbWFuIG9mIDIwMjQ/IiwKICAic3BvcnQiOiAiY3JpY2tldCIsCiAgImFuYWx5c3RBIjogIkJhc2VkIG9uIDIwMjQgVGVzdCBwZXJmb3JtYW5jZXMsIEpvZSBSb290IHN0YW5kcyBvdXQgYXMgdGhlIHByZW1pZXIgYmF0c21hbiwgY29tYmluaW5nIGV4Y2VwdGlvbmFsIHZvbHVtZSAob3ZlciAxLDUwMCBydW5zKSB3aXRoIHJlbWFya2FibGUgY29uc2lzdGVuY3kgYWNyb3NzIGRpdmVyc2UgY29uZGl0aW9ucy4gSGlzIHRlY2huaXF1ZSBhZ2FpbnN0IGJvdGggcGFjZSBhbmQgc3BpbiBoYXMgYmVlbiBleGVtcGxhcnkgLSBoaXMgZnJvbnQtZm9vdCBzdHJpZGUgYW5kIGJhdC1wYWQgZ2FwIG1hbmFnZW1lbnQgYWdhaW5zdCBzcGluIGluIEFzaWEsIGNvdXBsZWQgd2l0aCBoaXMgY29tcGFjdCBiYWNrLWZvb3QgcGxheSBhZ2FpbnN0IHBhY2UgaW4gRW5nbGFuZCBhbmQgdGhlIFdlc3QgSW5kaWVzLCBzaG93Y2FzZSBjb21wbGV0ZSB0ZWNobmljYWwgbWFzdGVyeS4gWWFzaGFzdmkgSmFpc3dhbCBkZXNlcnZlcyBzdHJvbmcgY29uc2lkZXJhdGlvbiBmb3IgaGlzIGJyZWFrdGhyb3VnaCB5ZWFyLCBkaXNwbGF5aW5nIG1hdHVyZSBzaG90IHNlbGVjdGlvbiBhbmQgYSBwYXJ0aWN1bGFybHkgaW1wcmVzc2l2ZSBhYmlsaXR5IHRvIGJ1aWxkIGxvbmcgaW5uaW5ncyB0aHJvdWdoIGRpc2NpcGxpbmVkIGxlYXZlIHBhdHRlcm5zIG91dHNpZGUgb2ZmLXN0dW1wLiBSb290J3Mgc3VwZXJpb3IgY29udmVyc2lvbiByYXRlIG9mIGZpZnRpZXMgdG8gaHVuZHJlZHMgYW5kIGhpcyBhYmlsaXR5IHRvIHNjb3JlIHJ1bnMgaW4gYWxsIHRocmVlIHNlc3Npb25zIG9mIHBsYXkgZ2l2ZSBoaW0gdGhlIGVkZ2UgaW4gd2hhdCdzIGJlZW4gYSBjb21wZXRpdGl2ZSBmaWVsZC4iLAogICJhbmFseXN0QiI6ICJCYXNlZCBvbiAyMDI0IFRlc3Qgc3RhdGlzdGljcywgSm9lIFJvb3Qgc3RhbmRzIG91dCBhcyB0aGUgcHJlbWllciBiYXRzbWFuIHdpdGggMSw1NTYgcnVucyBhdCBhbiBhdmVyYWdlIG9mIDU1LjU3IGFjcm9zcyAxNSBtYXRjaGVzLCBzaWduaWZpY2FudGx5IG91dHBhY2luZyBoaXMgcGVlcnMgaW4gYm90aCB2b2x1bWUgYW5kIGNvbnNpc3RlbmN5LiBXaGlsZSBZYXNoYXN2aSBKYWlzd2FsIGltcHJlc3NlZCB3aXRoIDEsMjE3IHJ1bnMgYXQgNTQuMTQgZnJvbSBqdXN0IDExIG1hdGNoZXMsIFJvb3QncyBzdXN0YWluZWQgZXhjZWxsZW5jZSBvdmVyIG1vcmUgZ2FtZXMgZ2l2ZXMgaGltIHRoZSBlZGdlLiBIYXJyeSBCcm9vayAoNzM1IHJ1bnMgYXQgNjEuMjUpIGFuZCBSYWNoaW4gUmF2aW5kcmEgKDY4MCBydW5zIGF0IDU2LjY3KSBwb3N0ZWQgc3VwZXJpb3IgYXZlcmFnZXMgYnV0IGxhY2sgdGhlIHNhbXBsZSBzaXplIHRvIGNoYWxsZW5nZSBSb290J3MgZG9taW5hbmNlLiBUaGUgbnVtYmVycyBjbGVhcmx5IGNvbnRyYWRpY3QgYW55IG5vdGlvbiB0aGF0IFJvb3QgaGFzIGRlY2xpbmVkIC0gYXQgMzMsIGhlJ3MgZW5qb3lpbmcgb25lIG9mIGhpcyBmaW5lc3Qgc3RhdGlzdGljYWwgeWVhcnMuIgp9",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "step-definitions/shared/api-steps.js:92"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "both analysts should respond with content",
+            "match": {
+              "location": "step-definitions/dual-analyst/analyst-steps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 232915
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "the response should echo back the sport and question",
+            "match": {
+              "location": "step-definitions/dual-analyst/analyst-steps.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 77790
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@functional",
+            "line": 2
+          },
+          {
+            "name": "@functional",
+            "line": 20
+          },
+          {
+            "name": "@p1",
+            "line": 20
+          },
+          {
+            "name": "@cricket",
+            "line": 20
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "dual-analyst-—-api-functional;valid-tennis-question-returns-both-analyst-perspectives",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Valid tennis question returns both analyst perspectives",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 12791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the SportIQ API is running",
+            "match": {
+              "location": "step-definitions/shared/api-steps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 175343833
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the analyst temperature is configured",
+            "match": {
+              "location": "step-definitions/shared/api-steps.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 116167
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "I send a valid tennis question",
+            "match": {
+              "location": "step-definitions/shared/api-steps.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 561959
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "I send the request",
+            "match": {
+              "location": "step-definitions/shared/request-logger.js:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7824813874
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "I attach the request and response",
+            "match": {
+              "location": "step-definitions/shared/request-logger.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 185709
+            },
+            "embeddings": [
+              {
+                "data": "ewogICJ1cmwiOiAiaHR0cHM6Ly9zcG9ydGlxLXZveHYub25yZW5kZXIuY29tL2FwaS9hbmFseXNlIiwKICAibWV0aG9kIjogIlBPU1QiLAogICJwYXRoIjogIi9hcGkvYW5hbHlzZSIsCiAgImJvZHkiOiB7CiAgICAicXVlc3Rpb24iOiAiV2hvIGhhcyB0aGUgYmVzdCBzZXJ2ZSBpbiBtZW5zIHRlbm5pcz8iLAogICAgInNwb3J0IjogInRlbm5pcyIKICB9LAogICJ0aW1lb3V0IjogMzAwMDAKfQ==",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "ewogICJkYXRlIjogIlRodSwgMTIgTWFyIDIwMjYgMTY6NDg6NDggR01UIiwKICAiY29udGVudC10eXBlIjogImFwcGxpY2F0aW9uL2pzb247IGNoYXJzZXQ9dXRmLTgiLAogICJ0cmFuc2Zlci1lbmNvZGluZyI6ICJjaHVua2VkIiwKICAiY29ubmVjdGlvbiI6ICJrZWVwLWFsaXZlIiwKICAiY2YtcmF5IjogIjlkYjQ0OWIxNWNkZDYzZjQtTEhSIiwKICAiYWNjZXNzLWNvbnRyb2wtYWxsb3ctb3JpZ2luIjogIioiLAogICJldGFnIjogIlcvXCI2MzAtWG9Ld2hzcnVoTEtSQ1g5UUNpUlMyQzZuYUFRXCIiLAogICJybmRyLWlkIjogImE1ZGZhMDczLTFiNWMtNDJmYiIsCiAgInZhcnkiOiAiQWNjZXB0LUVuY29kaW5nIiwKICAieC1wb3dlcmVkLWJ5IjogIkV4cHJlc3MiLAogICJ4LXJlbmRlci1vcmlnaW4tc2VydmVyIjogIlJlbmRlciIsCiAgImNmLWNhY2hlLXN0YXR1cyI6ICJEWU5BTUlDIiwKICAic2VydmVyIjogImNsb3VkZmxhcmUiLAogICJhbHQtc3ZjIjogImgzPVwiOjQ0M1wiOyBtYT04NjQwMCIKfQ==",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "ewogICJxdWVzdGlvbiI6ICJXaG8gaGFzIHRoZSBiZXN0IHNlcnZlIGluIG1lbnMgdGVubmlzPyIsCiAgInNwb3J0IjogInRlbm5pcyIsCiAgImFuYWx5c3RBIjogIkpvaG4gSXNuZXIgaG9sZHMgbWFueSBvZiB0aGUgZmFzdGVzdCBzZXJ2ZSByZWNvcmRzLCBidXQgKipJdm8gS2FybG92aWMqKiBsaWtlbHkgaGFzIHRoZSBtb3N0IGRvbWluYW50IHNlcnZlIG92ZXJhbGwgLSBoaXMgNicxMVwiIGZyYW1lIGdlbmVyYXRlcyBleGNlcHRpb25hbCBhbmdsZXMgYW5kIGhlIGxlYWRzIHRoZSBhbGwtdGltZSBhY2VzIHJlY29yZC4gRm9yIGN1cnJlbnQgcGxheWVycywgKipOaWNrIEt5cmdpb3MqKiBwb3NzZXNzZXMgdGhlIG1vc3QgdmVyc2F0aWxlIHNlcnZlIHdpdGggaGlzIGFiaWxpdHkgdG8gaGl0IDE0MCsgbXBoIGJvbWJzIHdoaWxlIG1peGluZyBpbiBwcmVjaXNlIHBsYWNlbWVudCBhbmQgdmFyaWV0eS4gKipNaWxvcyBSYW9uaWMqKiBkZXNlcnZlcyBtZW50aW9uIGZvciBoaXMgY29uc2lzdGVudCBwb3dlciBhbmQgcGxhY2VtZW50LCByZWd1bGFybHkgaGl0dGluZyAxMzUrIG1waCB3aXRoIHN0cm9uZyBjb3VydCBwb3NpdGlvbmluZy4gQW1vbmcgYWN0aXZlIHRvcCBwbGF5ZXJzLCAqKk1hdHRlbyBCZXJyZXR0aW5pKiogaGFzIGVtZXJnZWQgd2l0aCBvbmUgb2YgdGhlIG1vc3QgY29tcGxldGUgc2VydmluZyBnYW1lcywgY29tYmluaW5nIHBvd2VyICgxMzArIG1waCBhdmVyYWdlKSB3aXRoIHRhY3RpY2FsIHByZWNpc2lvbiBhbmQgc3Ryb25nIGZvbGxvdy11cCBjb3VydCBwb3NpdGlvbmluZy4iLAogICJhbmFseXN0QiI6ICJKb2huIElzbmVyIGhvbGRzIHRoZSByZWNvcmQgZm9yIG1vc3QgYWNlcyBpbiBhIG1hdGNoICgxMTMgYXQgV2ltYmxlZG9uIDIwMTApIGFuZCBoYXMgdGhlIGhpZ2hlc3QgY2FyZWVyIGFjZSByYXRlLCBidXQgdGhlICpiZXN0KiBzZXJ2ZSBiZWxvbmdzIHRvICoqSXZvIEthcmxvdmnEhyoqIC0gYXQgNicxMVwiLCBoZSdzIGF2ZXJhZ2VkIG92ZXIgMjUgYWNlcyBwZXIgbWF0Y2ggdGhyb3VnaG91dCBoaXMgY2FyZWVyIGFuZCBob2xkcyBtdWx0aXBsZSBzZXJ2aW5nIHJlY29yZHMuIEhvd2V2ZXIsIGZvciBwdXJlIGRvbWluYW5jZSBhbmQgY2x1dGNoIHNlcnZpbmcgdW5kZXIgcHJlc3N1cmUsICoqSm9obiBNY0Vucm9lJ3MqKiBzZXJ2ZSB3YXMgc3RhdGlzdGljYWxseSBzdXBlcmlvciBpbiBiaWcgbW9tZW50cywgbGVhZGluZyB0aGUgdG91ciBpbiBzZXJ2aWNlIGdhbWVzIHdvbiBwZXJjZW50YWdlIG11bHRpcGxlIHRpbWVzLiBBbW9uZyBhY3RpdmUgcGxheWVycywgKipSZWlsbHkgT3BlbGthKiogaGFzIHRoZSBtb3N0IGxldGhhbCBmaXJzdCBzZXJ2ZSwgYnV0ICoqTmljayBLeXJnaW9zKiogY29tYmluZXMgcG93ZXIsIHBsYWNlbWVudCwgYW5kIHZhcmlldHkgYmV0dGVyIHRoYW4gYW55b25lIHdoZW4gaGUncyBkaWFsZWQgaW4uIFRoZSBudW1iZXJzIGRvbid0IGxpZTogS2FybG92acSHJ3Mgc2VydmUgd29uIGhpbSBtb3JlIGZyZWUgcG9pbnRzIHRoYW4gYW55IHBsYXllciBpbiBoaXN0b3J5LCBtYWtpbmcgaXQgdGhlIG1vc3QgZWZmZWN0aXZlIHdlYXBvbiB0aGUgZ2FtZSBoYXMgc2Vlbi4iCn0=",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "step-definitions/shared/api-steps.js:92"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73667
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "both analysts should respond with content",
+            "match": {
+              "location": "step-definitions/dual-analyst/analyst-steps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 235582
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "the response should echo back the sport and question",
+            "match": {
+              "location": "step-definitions/dual-analyst/analyst-steps.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33375
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@functional",
+            "line": 2
+          },
+          {
+            "name": "@functional",
+            "line": 30
+          },
+          {
+            "name": "@p1",
+            "line": 30
+          },
+          {
+            "name": "@tennis",
+            "line": 30
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "dual-analyst-—-api-functional",
+    "line": 3,
+    "keyword": "Feature",
+    "name": "Dual Analyst — API Functional",
+    "tags": [
+      {
+        "name": "@functional",
+        "line": 2
+      }
+    ],
+    "uri": "features/dual-analyst/functional.feature"
+  }
+]

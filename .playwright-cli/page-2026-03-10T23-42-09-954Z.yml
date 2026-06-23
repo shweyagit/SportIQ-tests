@@ -1,0 +1,44 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: ⚽
+      - generic [ref=e7]:
+        - generic [ref=e8]: SportIQ
+        - generic [ref=e9]: AI SPORTS PLATFORM
+    - generic [ref=e10]: POWERED BY CLAUDE
+  - generic [ref=e11]:
+    - generic [ref=e12]:
+      - button "⚽ FOOTBALL" [active] [ref=e13] [cursor=pointer]:
+        - generic [ref=e14]: ⚽
+        - generic [ref=e15]: FOOTBALL
+      - button "🏏 CRICKET" [ref=e16] [cursor=pointer]:
+        - generic [ref=e17]: 🏏
+        - generic [ref=e18]: CRICKET
+      - button "🎾 TENNIS" [ref=e19] [cursor=pointer]:
+        - generic [ref=e20]: 🎾
+        - generic [ref=e21]: TENNIS
+    - generic [ref=e22]:
+      - button "DUAL ANALYST" [ref=e23] [cursor=pointer]
+      - button "PLAYER PROFILE" [ref=e24] [cursor=pointer]
+      - button "HEAD TO HEAD" [ref=e25] [cursor=pointer]
+      - button "TIMELINE" [ref=e26] [cursor=pointer]
+  - generic [ref=e28]:
+    - generic [ref=e29]: ASK THE ANALYSTS
+    - generic [ref=e30]:
+      - textbox "Ask anything about football..." [ref=e31]
+      - button "ANALYSE →" [ref=e32] [cursor=pointer]
+    - generic [ref=e33]:
+      - button "Is Mbappe worth his transfer fee?" [ref=e34] [cursor=pointer]
+      - button "Messi or Ronaldo GOAT?" [ref=e35] [cursor=pointer]
+      - button "Is Tiki-Taka dead?" [ref=e36] [cursor=pointer]
+      - button "Will Arsenal win the PL?" [ref=e37] [cursor=pointer]
+      - button "Best manager of the decade?" [ref=e38] [cursor=pointer]
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - generic [ref=e42]: ALEX
+        - generic [ref=e43]: Tactical Analyst
+        - paragraph [ref=e45]: AWAITING QUERY...
+      - generic [ref=e46]:
+        - generic [ref=e48]: PEP
+        - generic [ref=e49]: Data & Stats
+        - paragraph [ref=e51]: AWAITING QUERY...
